@@ -1,4 +1,2 @@
 #!/bin/bash
-#comment
-
 mv -p [A-Z]* /tmp/u
