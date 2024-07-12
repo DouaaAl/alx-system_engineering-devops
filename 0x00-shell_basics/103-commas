@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -ap1 | grep -E '^\.$|^\.\.$'; ls -ap1 | grep -Ev '^\.$|^\.\.$' | sort -t '' -k1,1 | tr '\n' ',') | sed 's/,$/\n/'
+ls -xamp
