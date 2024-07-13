@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script formats and displays user information from /etc/passwd.
+
+while IFS=: read -r username _ user_id group_id home_directory shell _; do
+    # Display formatted information
+    echo "The user $username is part of the $group_id gang, lives in $home_directory and rides $shell."
+    echo "USER ID's place is protected by the passcode $user_id, more info about the user here: $user_id."
+    echo
+done < /etc/passwd
