@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# displays the content of the current working directory.
+# trims the stuff before - in a file name
 
-for i in *; do
-	echo "$i" | cut -d '-' -f2-
+temp="${PWD}/*"
+
+for i in $temp ; do
+    basename "$i" | cut -d "-" -f2
 done
