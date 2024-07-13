@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # comment
 
-pgrep -a bash
+pgrep -l bash
