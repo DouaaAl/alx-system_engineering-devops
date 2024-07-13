@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# using if for the first time
+
+c=1
+while [ $c -le 10 ]; do
+  echo "Best School"
+  if [ "$c" -eq 9 ]; then
+  	echo "Hi"
+  fi
+  ((c++))
+done
