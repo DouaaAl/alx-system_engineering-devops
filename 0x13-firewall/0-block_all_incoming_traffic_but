@@ -1,7 +1,18 @@
+sudo su
+uname -r
 sudo apt update
-sudo apt install ufw
+sudo apt upgrade
+sudo apt remove --purge iptables ufw
+sudo apt install iptables ufw
+sudo ufw reset
 sudo ufw allow 22/tcp
 sudo ufw allow 443/tcp
 sudo ufw allow 80/tcp
 sudo ufw enable
 sudo ufw status
+sudo ufw status verbose
+sudo iptables -L
+sudo mount -o remount,rw /
+sudo nano /etc/default/ufw
+# Set IPV6=no in /etc/default/ufw
+sudo reboot
